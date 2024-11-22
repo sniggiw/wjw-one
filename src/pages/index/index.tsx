@@ -1,4 +1,5 @@
-import { View, Text } from "@tarojs/components";
+import DailySignature from "@/components/DailySignature";
+import { View } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
 import "./index.scss";
 
@@ -8,8 +9,8 @@ export default function Index() {
   });
 
   return (
-    <View className="text-rose-600">
-      <Text>This is wjw one project!</Text>
+    <View>
+      <DailySignature />
     </View>
   );
 }
