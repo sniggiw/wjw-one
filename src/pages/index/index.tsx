@@ -1,4 +1,5 @@
 import DailySignature from "@/components/DailySignature";
+import Read from "@/components/Read";
 import { View } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
 import "./index.scss";
@@ -11,6 +12,7 @@ export default function Index() {
   return (
     <View>
       <DailySignature />
+      <Read />
     </View>
   );
 }

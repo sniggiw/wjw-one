@@ -5,7 +5,7 @@ import Like from "../Like";
 
 export default function DailySignature() {
   return (
-    <View className="p-4 bg-white">
+    <View className="p-4 mb-4 bg-white">
       <View className="flex flex-col items-center rounded-lg overflow-hidden shadow-lg">
         <Image
           src="https://picsum.photos/200/150"
