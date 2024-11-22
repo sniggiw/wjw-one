@@ -8,7 +8,7 @@ export default function DailySignature() {
     <View className="p-4 mb-4 bg-white">
       <View className="flex flex-col items-center rounded-lg overflow-hidden shadow-lg">
         <Image
-          src="https://picsum.photos/200/150"
+          src={`https://picsum.photos/id/${Random.integer(1,200)}/200/150/`}
           className="w-full rounded-lg"
         />
         <View className="pt-2 pb-5 text-xs text-slate-400">

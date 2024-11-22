@@ -1,8 +1,5 @@
-import DailySignature from "@/components/DailySignature";
-import Read from "@/components/Read";
-import Radio from "@/components/Radio";
-import SlidToPrevious from "@/components/SlideToPrevious";
-import { View } from "@tarojs/components";
+import IndexItem from "@/components/IndexItem";
+import { Swiper, SwiperItem } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
 import "./index.scss";
 
@@ -12,11 +9,16 @@ export default function Index() {
   });
 
   return (
-    <View>
-      <DailySignature />
-      <Read />
-      <Radio />
-      <SlidToPrevious />
-    </View>
+    <Swiper className="indexSwiper">
+      <SwiperItem className="indexSwiperItem">
+        <IndexItem />
+      </SwiperItem>
+      <SwiperItem className="indexSwiperItem">
+        <IndexItem />
+      </SwiperItem>
+      <SwiperItem className="indexSwiperItem">
+        <IndexItem />
+      </SwiperItem>
+    </Swiper>
   );
 }

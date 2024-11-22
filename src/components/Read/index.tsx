@@ -15,7 +15,7 @@ export default function Read() {
           {Random.csentence(10, 30)}
         </View>
         <Image
-          src="https://picsum.photos/200/150"
+          src={`https://picsum.photos/id/${Random.integer(1, 200)}/200/150`}
           className="w-full rounded-lg"
         />
         <View className="w-full flex justify-end items-center gap-6 px-2 py-4">
