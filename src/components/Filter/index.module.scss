@@ -1,0 +1,21 @@
+.triangle {
+  margin-bottom: 4rpx;
+  width: 0;
+  height: 0;
+  border-radius: 2rpx;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+  border-top: 14rpx solid #000;
+
+  transition: all 0.4s ease-in-out;
+
+  &.active {
+    transform: rotate(180deg);
+  }
+}
+
+.scrollContainer {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

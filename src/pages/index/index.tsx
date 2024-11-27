@@ -1,5 +1,6 @@
+import Filter from "@/components/Filter";
 import IndexItem from "@/components/IndexItem";
-import { Swiper, SwiperItem } from "@tarojs/components";
+import { View } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
 import "./index.scss";
 
@@ -9,16 +10,9 @@ export default function Index() {
   });
 
   return (
-    <Swiper className="indexSwiper">
-      <SwiperItem className="indexSwiperItem">
-        <IndexItem />
-      </SwiperItem>
-      <SwiperItem className="indexSwiperItem">
-        <IndexItem />
-      </SwiperItem>
-      <SwiperItem className="indexSwiperItem">
-        <IndexItem />
-      </SwiperItem>
-    </Swiper>
+    <View className="pageIndex overflow-hidden pt-[60px]">
+      <Filter />
+      <IndexItem />
+    </View>
   );
 }
